@@ -120,7 +120,7 @@ int main(void)
     bool n=true;
     
     cout<<"Welcome to PONG EXTREME."<<endl;
-    cout<<"SCORE 16 POINTS TO WIN!!!"<<endl;
+    cout<<"SCORE 20 POINTS TO WIN!!!"<<endl;
     cout<<"You are the white paddle. Press 'W' for up and 'S' for down."<<endl;
     while(n)
     {
@@ -255,14 +255,14 @@ int main(void)
         }
 //FINISH DRAWING!        
         EndDrawing();
-        if(Player1Score>15)
+        if(Player1Score==20)
         {
             PlaySound(Victory);
             cout<<"CONGRATS YOU WON!!!!"<<endl;
             cout<<"YOU: "<<Player1Score<<" CPU: "<<Player2Score<<endl;
             break;
         }
-        else if(Player2Score>15)
+        else if(Player2Score==20)
         {
             PlaySound(Lost);
             cout<<"I AM SORRY YOU LOST!!!"<<endl;
